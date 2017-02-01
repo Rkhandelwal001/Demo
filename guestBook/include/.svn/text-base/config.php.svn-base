@@ -1,0 +1,21 @@
+<?php
+// database information
+$servername="localhost";
+$username="root";
+$password="";
+$database="db_rahul";
+
+//create connection
+mysql_connect($servername, $username, $password);
+print "Connected to the Server";
+
+$db_found=mysql_select_db($database);
+if($db_found)
+{
+	print "database found";
+	}
+	else
+	{
+		print "database not found";
+		}
+?>
